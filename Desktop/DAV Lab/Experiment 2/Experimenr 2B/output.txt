@@ -1,0 +1,112 @@
+First 5 rows:
+      App        Category  Rating  Reviews  ...  Installs  Type Price  Content_Rating
+0  App_0  ART_AND_DESIGN     4.4    86729  ...    100000  Paid   0.0        Everyone
+1  App_1         MEDICAL     3.8    95580  ...     50000  Free   0.0      Mature 17+
+2  App_2          FAMILY     4.0    33032  ...   1000000  Free   0.0        Everyone
+3  App_3       EDUCATION     4.7    83383  ...    100000  Paid   0.0        Everyone
+4  App_4       EDUCATION     4.1   120839  ...     10000  Free   0.0        Everyone
+
+[5 rows x 9 columns]
+
+Last 5 rows:
+          App        Category  Rating  ...  Type  Price  Content_Rating
+195  App_195  ART_AND_DESIGN     3.2  ...  Free   0.00        Everyone
+196  App_196           TOOLS     4.1  ...  Free   6.37            Teen
+197  App_197  ART_AND_DESIGN     4.3  ...  Free   0.00        Everyone
+198  App_198           TOOLS     4.3  ...  Free   0.00        Everyone
+199  App_199       LIFESTYLE     4.1  ...  Free   0.00            Teen
+
+[5 rows x 9 columns]
+
+DataFrame Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 200 entries, 0 to 199
+Data columns (total 9 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   App             200 non-null    str    
+ 1   Category        200 non-null    str    
+ 2   Rating          196 non-null    float64
+ 3   Reviews         200 non-null    int64  
+ 4   Size_MB         200 non-null    float64
+ 5   Installs        200 non-null    int64  
+ 6   Type            200 non-null    str    
+ 7   Price           200 non-null    float64
+ 8   Content_Rating  200 non-null    str    
+dtypes: float64(3), int64(2), str(4)
+memory usage: 14.2 KB
+
+Summary statistics:
+            Rating        Reviews     Size_MB        Installs       Price
+count  196.000000     200.000000  200.000000      200.000000  200.000000
+mean     4.180612  105086.995000   50.263000   262415.000000    0.681350
+std      0.378162   57285.823934   28.524022   375517.576187    2.060762
+min      3.200000     988.000000    1.500000     1000.000000    0.000000
+25%      3.900000   58718.000000   24.475000     5000.000000    0.000000
+50%      4.200000  107998.500000   51.150000    50000.000000    0.000000
+75%      4.400000  152905.000000   74.050000   500000.000000    0.000000
+max      5.000000  199820.000000   99.600000  1000000.000000    9.900000
+
+Missing values after fillna:
+ App               0
+Category          0
+Rating            0
+Reviews           0
+Size_MB           0
+Installs          0
+Type              0
+Price             0
+Content_Rating    0
+dtype: int64
+
+Series addition (first 5):
+ 0     86739
+1     95590
+2     33042
+3     83393
+4    120849
+Name: Reviews, dtype: int64
+
+Filtered DataFrame (Rating>4.0 and Reviews<100000), shape: (62, 10)
+     App        Category  Rating  Reviews  ...  Type  Price Content_Rating  Price_x2
+0  App_0  ART_AND_DESIGN     4.4    86729  ...  Paid   0.00       Everyone      0.00
+3  App_3       EDUCATION     4.7    83383  ...  Paid   0.00       Everyone      0.00
+5  App_5       LIFESTYLE     4.5    46521  ...  Free   0.00       Everyone      0.00
+7  App_7          FAMILY     4.1    73508  ...  Free   8.11       Everyone     16.22
+9  App_9  ART_AND_DESIGN     4.1    73284  ...  Paid   0.00           Teen      0.00
+
+[5 rows x 10 columns]
+
+Grouped mean Rating by Category:
+ Category
+ART_AND_DESIGN    4.165949
+EDUCATION         4.185000
+FAMILY            4.199282
+GAME              4.133940
+LIFESTYLE         4.115000
+MEDICAL           4.229206
+TOOLS             4.192308
+Name: Rating, dtype: float64
+
+Top 5 rows sorted by Reviews (desc):
+          App   Category  Rating  Reviews  ...  Type  Price Content_Rating  Price_x2
+199  App_199  LIFESTYLE     4.1   199820  ...  Free    0.0           Teen       0.0
+189  App_189      TOOLS     4.2   199406  ...  Free    0.0       Everyone       0.0
+70    App_70    MEDICAL     4.1   199332  ...  Free    0.0       Everyone       0.0
+151  App_151       GAME     3.7   197326  ...  Free    0.0       Everyone       0.0
+176  App_176    MEDICAL     4.8   193662  ...  Free    0.0     Mature 17+       0.0
+
+[5 rows x 10 columns]
+
+Masked DataFrame (Reviews > median), shape: (100, 10)
+
+Shape after drop_duplicates/dropna: (200, 10)
+
+Saved subset_df to filtered_data.csv
+
+Total sum of Reviews: 21017399
+Mean Reviews: 105086.995
+Standard Deviation of Reviews: 57285.823933795735
+
+RESULT: Pandas DataFrame operations (loading, inspection, missing value handling,
+transformations, filtering, grouping, sorting, exporting) executed successfully.

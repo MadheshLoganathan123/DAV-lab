@@ -1,0 +1,19 @@
+============================================================
+EXPERIMENT 1: LIBRARY INSTALLATION & VERSION CHECK
+============================================================
+NumPy Version: 2.4.4
+Pandas Version: 3.0.2
+Matplotlib Version: 3.10.8
+Seaborn Version: 0.13.2
+SciPy Version: 1.17.1
+Statsmodels Version: NOT AVAILABLE in this offline sandbox -> No module named 'statsmodels'
+  (Install locally with: pip install statsmodels)
+Plotly Version: NOT AVAILABLE in this offline sandbox -> No module named 'plotly'
+  (Install locally with: pip install plotly)
+Bokeh Version: NOT AVAILABLE in this offline sandbox -> No module named 'bokeh'
+  (Install locally with: pip install bokeh)
+JupyterLab Version: NOT AVAILABLE in this offline sandbox -> No module named 'jupyterlab'
+  (Install locally with: pip install jupyterlab)
+
+All available libraries successfully verified.
+Libraries are ready for scientific computing, data analysis, and visualization.

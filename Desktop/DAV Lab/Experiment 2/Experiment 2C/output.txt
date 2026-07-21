@@ -1,0 +1,25 @@
+Text/CSV data:
+       Product  Price  Quantity
+0      Laptop   1000         5
+1  Smartphone    800         8
+2      Tablet    500        10
+3  Headphones    100        15
+
+Excel data:
+   Employee Department  Salary
+0    Alice      Sales   55000
+1      Bob         IT   72000
+2  Charlie         HR   48000
+3    Diana    Finance   63000
+
+Web-sourced data:
+         Country  Region
+0       Algeria  AFRICA
+1        Angola  AFRICA
+2         Benin  AFRICA
+3      Botswana  AFRICA
+4  Burkina Faso  AFRICA
+
+Saved processed_text.csv and processed_excel.xlsx
+
+RESULT: Successfully read and processed data from text, Excel, and web-style sources.
