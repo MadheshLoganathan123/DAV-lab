@@ -1,0 +1,30 @@
+
+# ============================================================
+# CS4503: DATA ANALYTICS AND VISUALIZATION
+# Common Requirements for All Experiments (1, 2A–2D, 3A–3D)
+# ============================================================
+# Install all dependencies with:
+#   pip install -r requirements.txt
+
+# Core scientific computing
+numpy
+scipy
+
+# Data manipulation & analysis
+pandas
+statsmodels
+
+# Machine learning
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+plotly
+bokeh
+
+# Excel file support (required by pandas for .xlsx read/write)
+openpyxl
+
+# Interactive notebook environment
+jupyterlab
