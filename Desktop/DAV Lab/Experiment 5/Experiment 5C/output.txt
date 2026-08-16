@@ -1,0 +1,36 @@
+Loaded existing diabetes9.csv.
+
+Dataset Preview:
+         Date  Glucose
+0  2018-01-01      148
+1  2018-01-02       85
+2  2018-01-03      183
+3  2018-01-04       89
+4  2018-01-05      137
+
+Shape : (768, 2)
+
+Date range : 2018-01-01 00:00:00 to 2020-02-07 00:00:00
+Glucose - Mean : 120.89
+Glucose - Std  : 31.97
+
+Plot saved: glucose_time_series.png
+Plot saved: decomposition.png
+Plot saved: moving_average.png
+
+Train size : 614
+Test  size : 154
+Fitting ARIMA(5, 1, 0) model …
+Plot saved: arima_forecast.png
+
+--- ARIMA Forecast Evaluation (Test Set) ---
+  MSE  : 978.3221
+  MAE  : 26.5216
+  RMSE : 31.2781
+Plot saved: output.png  (4-panel summary)
+
+RESULT:
+The Time Series Analysis identifies trends and seasonal patterns in glucose
+levels from the UCI Diabetes dataset. The ARIMA(5,1,0) model effectively
+forecasts future glucose values. Moving average smoothing reduces noise,
+and seasonal decomposition separates trend, seasonality, and residual components.

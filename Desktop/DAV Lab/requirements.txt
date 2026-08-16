@@ -1,30 +1,55 @@
 
 # ============================================================
 # CS4503: DATA ANALYTICS AND VISUALIZATION
-# Common Requirements for All Experiments (1, 2A–2D, 3A–3D)
+# Common Requirements for All Experiments (1, 2A–2D, 3A–3D,
+#                                          4A–4D, 5A–5C)
 # ============================================================
 # Install all dependencies with:
 #   pip install -r requirements.txt
 
-# Core scientific computing
+# ── Core scientific computing ────────────────────────────────
+# Used by: Exp 1, 2A, 3A–3D, 4A–4D, 5A–5C
 numpy
+
+# Used by: Exp 1, 3A, 4A (scipy.stats.norm),
+#          4C (scipy.stats.ttest_ind),
+#          4D (scipy.stats.f_oneway)
 scipy
 
-# Data manipulation & analysis
+# ── Data manipulation & analysis ────────────────────────────
+# Used by: Exp 2B, 2C, 2D, 3A–3D, 4A–4D, 5A–5C
 pandas
+
+# Used by: Exp 1, 4B (statsmodels.stats.weightstats.ztest),
+#          5C (statsmodels.tsa.seasonal.seasonal_decompose,
+#              statsmodels.tsa.arima.model.ARIMA)
 statsmodels
 
-# Machine learning
+# ── Machine learning ─────────────────────────────────────────
+# Used by: Exp 2D, 3B, 3C, 5A (LinearRegression, r2_score,
+#          mean_squared_error, mean_absolute_error),
+#          5B (LogisticRegression, accuracy_score, precision_score,
+#              recall_score, f1_score, confusion_matrix,
+#              classification_report),
+#          5C (mean_squared_error, mean_absolute_error)
 scikit-learn
 
-# Visualization
+# ── Visualization ────────────────────────────────────────────
+# Used by: Exp 2D, 3B, 4A, 5A, 5B, 5C
 matplotlib
+
+# Used by: Exp 2D, 3B, 4A, 5A, 5B, 5C
 seaborn
+
+# Used by: Exp 1 (version check only)
 plotly
+
+# Used by: Exp 1 (version check only)
 bokeh
 
-# Excel file support (required by pandas for .xlsx read/write)
+# ── File format support ──────────────────────────────────────
+# Used by: Exp 2C (pandas read_excel / to_excel for .xlsx files)
 openpyxl
 
-# Interactive notebook environment
+# ── Interactive notebook environment ─────────────────────────
 jupyterlab

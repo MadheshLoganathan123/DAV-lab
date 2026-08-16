@@ -1,0 +1,65 @@
+UCI Diabetes Dataset Sample:
+   Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72  ...                     0.627   50        1
+1            1       85             66  ...                     0.351   31        0
+2            8      183             64  ...                     0.672   32        1
+3            1       89             66  ...                     0.167   21        0
+4            0      137             40  ...                     2.288   33        1
+
+[5 rows x 9 columns]
+
+UCI  Shape : (768, 9)
+
+Pima Indians Diabetes Dataset Sample:
+   Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72  ...                     0.627   50        1
+1            1       85             66  ...                     0.351   31        0
+2            8      183             64  ...                     0.672   32        1
+3            1       89             66  ...                     0.167   21        0
+4            0      137             40  ...                     2.288   33        1
+
+[5 rows x 9 columns]
+
+Pima Shape : (768, 9)
+
+============================================================
+HYPOTHESIS TESTING - ONE-WAY ANOVA
+============================================================
+Significance Level (alpha) : 0.05
+H0: The means across groups are NOT significantly different.
+H1: At least one group mean IS significantly different.
+
+--- ANOVA Results ---
+               F-statistic  P-value
+Glucose                0.0      1.0
+BloodPressure          0.0      1.0
+BMI                    0.0      1.0
+
+--- Detailed Interpretation ---
+
+Glucose:
+  UCI  Mean  : 120.8945
+  Pima Mean  : 120.8945
+  F-statistic: 0.000000
+  P-value    : 1.000000
+  Result     : NOT SIGNIFICANT (p >= 0.05)
+
+BloodPressure:
+  UCI  Mean  : 69.1055
+  Pima Mean  : 69.1055
+  F-statistic: 0.000000
+  P-value    : 1.000000
+  Result     : NOT SIGNIFICANT (p >= 0.05)
+
+BMI:
+  UCI  Mean  : 31.9926
+  Pima Mean  : 31.9926
+  F-statistic: 0.000000
+  P-value    : 1.000000
+  Result     : NOT SIGNIFICANT (p >= 0.05)
+
+RESULT:
+One-Way ANOVA compares the means of Glucose, BloodPressure, and BMI between
+the UCI Diabetes and Pima Indians Diabetes datasets.
+Variables with F-statistic having p-value < 0.05 show statistically significant
+differences across the groups; others exhibit no significant variation.

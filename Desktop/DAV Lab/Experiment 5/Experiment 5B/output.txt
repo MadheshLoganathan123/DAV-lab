@@ -1,0 +1,83 @@
+UCI Diabetes Dataset Sample:
+   Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72  ...                     0.627   50        1
+1            1       85             66  ...                     0.351   31        0
+2            8      183             64  ...                     0.672   32        1
+3            1       89             66  ...                     0.167   21        0
+4            0      137             40  ...                     2.288   33        1
+
+[5 rows x 9 columns]
+
+UCI  Shape: (768, 9)
+
+Pima Indians Diabetes Dataset Sample:
+   Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72  ...                     0.627   50        1
+1            1       85             66  ...                     0.351   31        0
+2            8      183             64  ...                     0.672   32        1
+3            1       89             66  ...                     0.167   21        0
+4            0      137             40  ...                     2.288   33        1
+
+[5 rows x 9 columns]
+
+Pima Shape: (768, 9)
+
+Features : ['Glucose', 'BloodPressure', 'BMI']
+Target   : Outcome
+
+=======================================================
+MODEL BUILDING AND VALIDATION - LOGISTIC REGRESSION
+=======================================================
+
+-------------------------------------------------------
+UCI Diabetes Dataset - Logistic Regression Results:
+  Accuracy : 0.7662
+  Precision: 0.6939
+  Recall   : 0.6182
+  F1 Score : 0.6538
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.82        99
+           1       0.69      0.62      0.65        55
+
+    accuracy                           0.77       154
+   macro avg       0.75      0.73      0.74       154
+weighted avg       0.76      0.77      0.76       154
+
+
+-------------------------------------------------------
+Pima Indians Diabetes Dataset - Logistic Regression Results:
+  Accuracy : 0.7662
+  Precision: 0.6939
+  Recall   : 0.6182
+  F1 Score : 0.6538
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.82        99
+           1       0.69      0.62      0.65        55
+
+    accuracy                           0.77       154
+   macro avg       0.75      0.73      0.74       154
+weighted avg       0.76      0.77      0.76       154
+
+
+Plot saved: output.png
+
+=======================================================
+COMPARISON SUMMARY
+=======================================================
+                               Accuracy  Precision    Recall  F1 Score
+Dataset                                                               
+UCI Diabetes Dataset           0.766234   0.693878  0.618182  0.653846
+Pima Indians Diabetes Dataset  0.766234   0.693878  0.618182  0.653846
+
+RESULT:
+The Logistic Regression Model predicts diabetes presence (Outcome: 0 or 1).
+Accuracy, Precision, Recall, and F1 Score indicate classification performance.
+Confusion matrices show the distribution of true/false positives and negatives.
+Differences in metrics between the two datasets highlight variations in the
+classification ability of the model on each dataset.

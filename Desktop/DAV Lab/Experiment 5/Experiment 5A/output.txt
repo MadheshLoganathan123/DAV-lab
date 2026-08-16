@@ -1,0 +1,68 @@
+UCI Diabetes Dataset Sample:
+   Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72  ...                     0.627   50        1
+1            1       85             66  ...                     0.351   31        0
+2            8      183             64  ...                     0.672   32        1
+3            1       89             66  ...                     0.167   21        0
+4            0      137             40  ...                     2.288   33        1
+
+[5 rows x 9 columns]
+
+UCI  Shape: (768, 9)
+
+Pima Indians Diabetes Dataset Sample:
+   Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72  ...                     0.627   50        1
+1            1       85             66  ...                     0.351   31        0
+2            8      183             64  ...                     0.672   32        1
+3            1       89             66  ...                     0.167   21        0
+4            0      137             40  ...                     2.288   33        1
+
+[5 rows x 9 columns]
+
+Pima Shape: (768, 9)
+
+Features : ['Glucose', 'BloodPressure', 'BMI']
+Target   : Age
+
+=======================================================
+MODEL BUILDING AND VALIDATION - LINEAR REGRESSION
+=======================================================
+
+--------------------------------------------------
+UCI Diabetes Dataset - Linear Regression Results:
+  R² Score : 0.0749
+  MSE      : 147.8913
+  MAE      : 9.5818
+  Intercept: 17.0301
+  Coefficients:
+    Glucose                       : 0.0921
+    BloodPressure                 : 0.1399
+    BMI                           : -0.1552
+
+--------------------------------------------------
+Pima Indians Diabetes Dataset - Linear Regression Results:
+  R² Score : 0.0749
+  MSE      : 147.8913
+  MAE      : 9.5818
+  Intercept: 17.0301
+  Coefficients:
+    Glucose                       : 0.0921
+    BloodPressure                 : 0.1399
+    BMI                           : -0.1552
+
+Plot saved: output.png
+
+=======================================================
+COMPARISON SUMMARY
+=======================================================
+                               R² Score         MSE       MAE
+Dataset                                                      
+UCI Diabetes Dataset           0.074918  147.891339  9.581796
+Pima Indians Diabetes Dataset  0.074918  147.891339  9.581796
+
+RESULT:
+The Linear Regression Model establishes relationships between the independent
+variables (Glucose, BloodPressure, BMI) and the target variable (Age).
+R² Score, MSE, and MAE indicate model performance. Differences between the
+two datasets highlight variations in data distribution and predictive capability.
